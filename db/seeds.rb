@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+8.times do
+  Article.create(title: Faker::Simpsons.character, content: Faker::Simpsons.location)
+end
